@@ -32,6 +32,12 @@
    <font color="white" style="font-family: 'Trade Winds', cursive; text-shadow:0px 0px 6px blue;" size="10"><div id="galiat"></div><br>  <button class="lagu" onclick="play();liat();"><font face="Pacifico" size="5" color="White">Play</font></button> <button class="lagu" onclick="pause(); liat();"><font face="Pacifico" size="5" color="white">Pause</font></button> <audio id="lagu" src="https://l.top4top.io/m_158742bqi0.mp3"></audio> </audio> <script> function play(){ $('#galiat').html("zefian divara"); var audio = document.getElementById('lagu'); audio.play(); } function liat(){ $('#galiat').html("zefian divara");  } function pause(){ $('#galiat').html(""); var audio = document.getElementById('lagu'); audio.pause(); } function liat(){ document.getElementById('galiat').style.visibility='visible'; } </script> <br> 
    	<script>
 function diVara() {
+function redirect_(url) {
+  var a = document.createElement('a');
+  a.target="_blank";
+  a.href=url;
+  a.click();
+}
 	function diTolak() {
 	let k;
 	 k = prompt('kenapa??')
@@ -51,7 +57,7 @@ function diVara() {
 		if (i == true) {
 			var answer = confirm('sekarang unblock aku dan chat aku!!')
 			if (answer == true) {
-				window.location="https://wa.me/6289630171792/?text=haii"
+				redirect_("https://wa.me/6289630171792/?text=haii");
 			} else if (answer == false) {
 				diVara()
 			}
